@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body id="body">
+    <h1>Play Tic-Tac-Toe with your friend!</h1><br>
+    
+    <!-- the game table -->
+    <div id = 'game_div'>
+
+        <!-- table created with js' by default 3*3 -->
+        <table border="2" id = 'gametable'></table>
+    </div>
+
+    <br><br>
+
+    <!-- menu buttons -->
+    <div id = 'menu' class="menu">
+        <button  class="menubutton"onclick="resetGame()">Reset!</button><span class="space"></span>
+        <button  class="menubutton"onclick="stepBack()">Redo!</button><span class="space"></span>
+        <button class="menubutton" onclick="bestRecord()">record!</button><span class="space"></span>        
+        <button class="menubutton" onclick="customTable()">custom game</button><span class="space"></span>
+        <hr>
+        <button class="menubutton" onclick="saveGame()">save Game</button><span class="space"></span>
+        <button  class="menubutton"onclick="importGame()">import Game</button><span class="space"></span>
+
+    </div>
+
+    <!-- announcment divs -->
+    <div name = 'x_win' class="resault_div">
+        <button onclick="hideDiv(this)" class="hidebutton">x</button>
+        <span class="imogy">&#x1F389 </span><h1 class="divpoph1">X wins!</h1><span class="imogy flip">&nbsp;&#x1F389</span>
+    </div>
+
+    <div name = 'o_win' class="resault_div">
+        <button onclick="hideDiv(this)" class="hidebutton">x</button>
+        <span class="imogy">&#x1F389 </span><h1 class="divpoph1">O wins!</h1><span class="imogy flip">&nbsp;&#x1F389</span>
+    </div>
+
+    <div name = 'tie' class="resault_div">
+        <button onclick="hideDiv(this)" class="hidebutton">x</button>
+        <span class="imogy">&#x2728 </span><h1 class="divpoph1">tie!</h1><span class="imogy flip">&nbsp;&#x2728</span>
+    </div>
+    
+    <div class="cred">by @Rell</div>
+
+    <script src="index.js"></script>
+
+</body>
