@@ -1,2 +1,2 @@
 # TicTacToe
-html/js Tic-Tac-Toe game 
+html/js Tic-Tac-Toe game!
